@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin · Mis Links</title>
+  <link rel="icon" href="../assets/img/avatar.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="tb-left">
+      <span class="logo">DC</span>
+      <strong>Mis Links</strong>
+      <span class="status" id="status">Cargando…</span>
+    </div>
+    <div class="tb-right">
+      <a class="btn ghost" id="viewSite" href="../" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Ver sitio</span></a>
+      <button class="btn primary" id="publishBtn" type="button"><i class="fa-solid fa-cloud-arrow-up"></i><span>Publicar</span></button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidenav" id="sidenav" aria-label="Secciones">
+      <button data-tab="links" class="active"><i class="fa-solid fa-list"></i><span>Links</span></button>
+      <button data-tab="appearance"><i class="fa-solid fa-palette"></i><span>Apariencia</span></button>
+      <button data-tab="profile"><i class="fa-solid fa-user"></i><span>Perfil</span></button>
+      <button data-tab="analytics"><i class="fa-solid fa-chart-simple"></i><span>Analíticas</span></button>
+      <button data-tab="settings"><i class="fa-solid fa-gear"></i><span>Ajustes</span></button>
+    </nav>
+
+    <main class="editor" id="editor" aria-live="polite"></main>
+
+    <aside class="preview" id="previewPane">
+      <div class="phone">
+        <iframe id="previewFrame" title="Vista previa" src="../index.html?preview=1"></iframe>
+      </div>
+      <p class="preview-note">Vista previa en vivo</p>
+    </aside>
+  </div>
+
+  <button class="preview-fab" id="togglePreview" type="button"><i class="fa-solid fa-eye"></i> Vista previa</button>
+
+  <input type="file" id="filePicker" accept="image/*" hidden>
+  <input type="file" id="jsonPicker" accept="application/json,.json" hidden>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../assets/js/shared.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

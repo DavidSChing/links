@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- META:START (lo regenera el panel al publicar) -->
+  <title>David Ching | Tech · Innovation · Business</title>
+  <meta name="description" content="Tech | Innovation | Business">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="David Ching | Tech · Innovation · Business">
+  <meta property="og:description" content="Tech | Innovation | Business">
+  <meta property="og:image" content="assets/img/avatar.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#eceef1">
+  <link rel="icon" href="assets/img/avatar.jpeg">
+  <!-- META:END -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/page.css">
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <main class="page" id="page" aria-busy="true">
+    <div class="topbar">
+      <a class="chip brand" id="brand" href="./" aria-label="Inicio"></a>
+      <button class="chip share-btn" id="shareProfile" type="button" aria-label="Compartir perfil">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+      </button>
+    </div>
+
+    <header class="profile">
+      <img class="avatar" id="avatar" alt="">
+      <h1 class="name" id="name"></h1>
+      <p class="bio" id="bio"></p>
+      <ul class="socials" id="socialsTop"></ul>
+    </header>
+
+    <section class="links" id="links" aria-label="Enlaces"></section>
+
+    <ul class="socials socials-bottom" id="socialsBottom"></ul>
+
+    <footer class="footer" id="footer"></footer>
+  </main>
+
+  <aside class="qr-corner" id="qrCorner" hidden>
+    <span>Ver en el móvil</span>
+    <div class="qr" id="qrCornerCode"></div>
+  </aside>
+
+  <!-- Modal de compartir (perfil o enlace) -->
+  <div class="modal" id="shareModal" hidden>
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+      <div class="modal-head">
+        <span></span>
+        <h2 id="shareTitle">Compartir</h2>
+        <button class="modal-x" type="button" data-close aria-label="Cerrar">&times;</button>
+      </div>
+      <div class="share-preview" id="sharePreview"></div>
+      <div class="share-qr" id="shareQr" hidden></div>
+      <div class="share-options" id="shareOptions"></div>
+    </div>
+  </div>
+
+  <!-- Modal de contenido sensible -->
+  <div class="modal" id="sensitiveModal" hidden>
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="sensTitle">
+      <div class="modal-head">
+        <span></span>
+        <h2 id="sensTitle">Contenido sensible</h2>
+        <button class="modal-x" type="button" data-close aria-label="Cerrar">&times;</button>
+      </div>
+      <p class="sens-text">Este enlace puede contener contenido no apto para todas las edades. ¿Deseas continuar?</p>
+      <div class="sens-actions">
+        <a class="sens-btn primary" id="sensContinue" target="_blank" rel="noopener">Continuar</a>
+        <button class="sens-btn" type="button" data-close>Volver</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="assets/js/shared.js"></script>
+  <script src="assets/js/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-24T00:00:00.000Z",
+  "profile": {
+    "title": "David Ching",
+    "bio": "Tech | Innovation | Business",
+    "avatar": "assets/img/avatar.jpeg",
+    "avatarShape": "circle",
+    "avatarSize": "small",
+    "brandText": "DC"
+  },
+  "socialPosition": "top",
+  "socials": [
+    { "id": "s1", "type": "instagram", "url": "https://instagram.com/david.chings", "enabled": true },
+    { "id": "s2", "type": "whatsapp", "url": "https://api.whatsapp.com/send?phone=51991331867", "enabled": true },
+    { "id": "s3", "type": "linkedin", "url": "https://www.linkedin.com/in/davidchingsato", "enabled": true },
+    { "id": "s4", "type": "github", "url": "https://github.com/DavidSChing", "enabled": true }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "type": "link",
+      "title": "Breakout Community",
+      "url": "https://chat.whatsapp.com/H57OlPIk33v75h9ZE6u1zs",
+      "enabled": true,
+      "layout": "classic",
+      "thumb": { "type": "image", "value": "assets/img/breakout.jpeg" },
+      "animation": "none",
+      "sensitive": false,
+      "schedule": { "start": "", "end": "" }
+    },
+    {
+      "id": "l2",
+      "type": "link",
+      "title": "DAREZ — Integramos hardware y software a medida",
+      "url": "https://darez-sys.lovable.app",
+      "enabled": true,
+      "layout": "featured",
+      "thumb": { "type": "image", "value": "assets/img/darez.jpeg" },
+      "animation": "none",
+      "sensitive": false,
+      "schedule": { "start": "", "end": "" }
+    }
+  ],
+  "theme": {
+    "preset": "aire",
+    "background": { "type": "flat", "color": "#eceef1", "color2": "#c9d3e0", "direction": "180deg", "image": "" },
+    "button": { "style": "fill", "radius": "sm", "color": "#ffffff", "textColor": "#000000", "shadowColor": "#000000" },
+    "font": "Inter",
+    "textColor": "#000000"
+  },
+  "settings": {
+    "siteUrl": "",
+    "metaTitle": "David Ching | Tech · Innovation · Business",
+    "metaDescription": "Tech | Innovation | Business",
+    "showShare": true,
+    "showQr": true,
+    "showBrand": true,
+    "footerText": "",
+    "goatcounter": ""
+  }
+}
